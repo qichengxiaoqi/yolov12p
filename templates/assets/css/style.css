@@ -1,0 +1,1454 @@
+/* ----------------------
+[Table of contents]
+ 
+01.Default CSS
+02.Preloader CSS
+03.Top Header CSS
+04.Navbar CSS
+05.Main Banner CSS
+06.Property Cities CSS
+07.Why Choose Us CSS
+08.Video Section CSS
+09.How it Works CSS
+10.Client Carousel CSS
+11.Testimonial CSS
+12.Team Section CSS
+13.Contact Page CSS
+14.Footer CSS
+15.Single-Post Page CSS
+16.Listing Single Page CSS
+17.Login Signup Modal CSS
+18.Owl Carousel Nav CSS
+19.Grid Page CSS
+20.Featured Properties CSS
+21.Articles & Tips CSS
+22.Stats Section CSS
+23.Pagination CSS
+24.Video Icon Animation CSS
+25.Pages Search Area CSS
+26.Pages Search Box CSS
+27.Search Bar CSS
+
+
+ --------------------------*/
+
+ /*======================================
+ ============== Default CSS =============
+ ======================================== */
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+:root{
+    --blue: #408bea;
+    --white: #ffffff;
+    --black: #000000;
+    --bg-light: #f8f9fa;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+section{
+    padding: 100px 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+span{
+  font-size: 14px;
+}
+.section-title{
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 50px;
+}
+.section-title h1{
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+a{
+    color: var(--blue);
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    font-size: 15px;
+}
+a:hover{
+    color: var(--blue);
+    text-decoration: none;
+}
+.btn{
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10px 18px;
+    border: 2px solid var(--blue);
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn:hover{
+  color: var(--white);
+  background-color: var(--blue);
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+.color-white{
+  color: var(--white)!important;
+}
+.color-black{
+  color: var(--black)!important;
+}
+.color-blue{
+  color: var(--blue);
+}
+.bg-black{
+  background-color: #1f1e23;
+}
+.bg-blue{
+  background-color: var(--blue)!important;
+}
+.bold{
+  font-weight: bold;
+}
+.relative{
+  position: relative;
+}
+.fa-star{
+  font-size: 15px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.form-control{
+    height: 50px;
+    border-radius: 5px;
+}
+.color-light {
+  color: #e8e8e8;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.dark{
+  filter: brightness(40%);
+}
+.form-control:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
+}
+.line{
+  height: 2px;
+  background-color: #efefefe8;
+  margin: 50px 0;
+}
+.align{
+  align-self: center;
+}
+.radius{
+  border-radius: 5px;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: var(--blue);
+  box-shadow: 0 0 10px 0 var(--blue);
+}
+
+/*======================================
+ ===========  PreLoader CSS  ==========
+ ======================================= */
+.loader-wrap {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 1100vh;
+}
+.loading{
+  position: absolute;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+}
+.text {
+  color: var(--blue);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+.bounceball:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: bounce 500ms alternate infinite ease;
+          animation: bounce 500ms alternate infinite ease;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/*======================================
+ =========== Top-Header CSS  ===========
+ ======================================= */
+
+.top-header-search-box .form-control{
+  height: 30px;
+}
+.top-header-search-icon{
+  background: transparent;
+  border: none;
+  color: var(--blue);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 14px;
+}
+.top-header-search-icon:focus{
+  outline: none;
+}
+
+/*======================================
+ =============  Navbar CSS  ============
+ ======================================= */
+
+.navbar{
+  z-index: 10;
+}
+.nav-link{
+  color: var(--white)!important;
+  cursor: pointer;
+  font-size: 15px;
+}
+.navbar-brand{
+  width: 115px;
+}
+.nav-colored{
+  background-color: var(--blue)!important;
+}
+.navbar-toggle-icon{
+  font-size: 30px;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
+.drpdwn-item{
+  position: relative;
+}
+.drpdwn-menu{
+  position: absolute;
+  width: 120px;
+  left: -10px;
+  right: 0;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  top: 60px;
+  border-radius: 3px;
+  padding: 5px 0;
+  background-color: var(--blue);
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.drpdwn-item:hover .drpdwn-menu{
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+.drpdwn-link{
+  display: none;
+  padding: 2px;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.drpdwn-item:hover .drpdwn-link{
+  display: block;
+}
+.drpdwn-link:hover{
+  background-color: var(--white);
+}
+.drpdwn-link:hover .nav-link{
+  color: var(--blue)!important;
+}
+.sticky .nav-btn .btn{
+  background-color: var(--white);
+  color: var(--blue);
+  border-color: var(--white);
+}
+.nav-colored .nav-btn .btn{
+  background-color: var(--white);
+  color: var(--blue);
+  border-color: var(--white);
+}
+/*======================================
+ ============ Main Banner CSS ==========
+ ======================================= */
+
+.home-main-banner-text-area{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.home-main-banner-text-area h1{
+  font-weight: 600;
+}
+.home-main-banner-text-area2 h1{
+  font-weight: 600;
+}
+/*======================================
+ ========== Property Cities CSS ========
+ ======================================= */
+
+ .property-cities-img{
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.property-cities-img img{
+  filter: brightness(70%);
+}
+.property-city-content{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.property-city-content h4{
+  font-size: 18px;
+  font-weight: bold;
+}
+.property-city-content p{
+  font-size: 14px;
+}
+
+/*======================================
+ ========== Why Choose Us CSS ==========
+ ======================================= */
+
+.why-choose-us-box-icon span{
+  font-size: 40px;
+}
+.why-choose-us-box span{
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 50px;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.why-choose-us-box-textarea{
+  background-color: #282f44;
+  color: var(--white);
+  padding: 70px 20px 40px 20px;
+  border-radius: 5px;
+  margin-top: -40px;
+}
+
+/*======================================
+ =========== Video Section CSS =========
+ ======================================= */
+
+#video{
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 200px 0;
+}
+#video::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000093;
+}
+.video-icon{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.video-icon p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.play-icon{
+  font-size: 18px;
+  border-radius: 50%;
+  color: var(--white)!important;
+  background-color: var(--blue);
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+}
+.play-icon::after, .play-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  border-radius: 50%;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-animation: ripple 1.5s ease-out infinite;
+         animation: ripple 1.5s ease-out infinite;
+  background-color: var(--blue);
+  z-index: -1;
+  }
+   
+/*======================================
+ =========== How it Works CSS ==========
+ ======================================= */
+
+.how-it-works-box{
+  box-shadow: 0 0 5px 0 #f1f1f1;
+  padding: 40px 0;
+  border-radius: 5px;
+}
+ .how-it-works-icon{
+  font-size: 30px;
+  position: relative;
+}
+.how-it-works-icon-box{
+  display: block;
+  height: 85px;
+  margin: 0 auto;
+  width: 85px;
+  border-radius: 20px;
+  line-height: 92px;
+}
+.how-it-works-icon-box1{
+  background: #0fca981a;
+  border: 1px solid #0fca984d;
+  color: #29cf8d;
+}
+.how-it-works-icon-box2{
+  background: #ff8f001a;
+  border: 1px solid #ff8f004d;
+  color: #ff8f00;
+}
+.how-it-works-icon-box3{
+  color: #1d96ff;
+  background: #1d96ff1a;
+  border: 1px solid #1d96ff4d;
+}
+.how-it-works-box h4{
+  font-size: 20px;
+  font-weight: 800;
+  margin: 26px 0 10px 0;
+}
+.how-it-works-box p{
+  color: #838383;
+}
+/*======================================
+ ========== Client Carousel CSS ========
+ ======================================= */
+
+.client-logo img{
+  width: 120px!important;
+  margin: 0 auto;
+}
+
+/*======================================
+ ============ Testimonial CSS ==========
+ ======================================= */
+
+.testimonial-box{
+  padding: 60px 30px;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px 5px 5px 5px;
+  border-top: 10px solid var(--blue);
+  margin-bottom: 27px;
+}
+.testimonial-box h4{
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.testimonial-img{
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  width: 60px!important;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  opacity: 0.6;
+}
+.testimonial-quote-left{
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  color: #ebebeb;
+  font-size: 30px;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.testimonial-box:hover .testimonial-img{
+  transform: scale(1.08);
+  right: 20px;
+  opacity: 1;
+}
+.testimonial-box:hover .testimonial-quote-left{
+  color: var(--blue);
+}
+
+
+/*======================================
+ =========== Team Section CSS ==========
+ ======================================= */
+
+.team-box{
+  box-shadow: 0 10px 31px 0 rgb(7 152 255 / 9%);
+  padding: 6px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.team-img{
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative; 
+}
+.team-img img{
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.team-icons span{
+  display: inline-block;
+  background-color: var(--bg-light);
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.team-contact-icons a{
+  display: inline-block;
+  color: var(--black);
+  background-color: var(--bg-light);
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.team-box:hover{
+  transform: scale(1.05);
+}
+.team-box:hover .team-img img{
+  transform: scale(1.1);
+  opacity: .8;
+}
+
+/*======================================
+ ========== Contact Page CSS ===========
+ ======================================= */
+
+ .contact-form .form-control{
+  margin-bottom: 20px;
+}
+.contact-details-box{
+  padding: 30px 0;
+  box-shadow: 0 0 5px 0 #e8e8e8;
+  border-radius: 5px;
+}
+.contact-details-social-icons a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid var(--blue);
+  border-radius: 50px;
+}
+.contact-details-social-icons a:hover{
+  background-color: var(--blue);
+  color: #fff;
+}
+.contact-details-icon{
+  font-size: 24px;
+}
+.valid-feedback{
+  font-weight: bold;
+  font-size: 14px;
+  background: transparent;
+  padding-left: 10px;
+}
+.invalid-feedback{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 14px;
+  background: transparent;
+  padding-left: 10px;
+}
+
+/*======================================
+ =============  Footer CSS  ============
+ ======================================= */
+
+/* Subscribe Box CSS */
+
+#subscribe-area{
+  background-image: url(../images/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#subscribe-area::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000099;
+}
+.sub-box button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 35%;
+}
+/* Upper Footer CSS */
+.upper-footer {
+  background-color: #252429;
+  color: #eaeaea;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.upper-footer .footer-logo a{
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--white);
+}
+.upper-footer .footer-list-heading{
+  margin-bottom: 20px;
+}
+.upper-footer .footer-list-heading h4{
+color: var(--white);
+  font-size: 22px;
+  font-weight: bold;
+}
+.upper-footer .footer-list li{
+  margin-bottom: 8px;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.upper-footer .footer-list li a{
+ color: var(--white);
+}
+.upper-footer .footer-list li p{
+color: var(--white);
+margin-top: 10px;
+}
+.upper-footer .footer-list .footer-arrow{
+  font-size: 15px;
+}
+
+.lower-footer{
+  background: #1F1E23;
+  padding: 10px 0;
+ }
+ .lower-footer{
+   text-align: center;
+   color: var(--white);
+ }
+ .lower-footer-copyright-area a{
+   font-weight: bold;
+   color: var(--blue);
+ }
+ .lower-footer-privacy-area a{
+ font-size: 15px;
+   color: var(--white);
+ }
+
+/*======================================
+ ========= Single-Post Page CSS ========
+ ======================================= */
+
+ .single-post-owner-n-date img{
+  width: 50px;
+  margin-right: 5px;
+}
+.single-post-highlighted-box{
+  border-left: 4px solid var(--blue);
+  border-radius: 5px;
+  padding: 25px;
+}
+.single-post-share-icons a{
+ background-color: #efefef;
+ color: #4c4c4c;
+ height: 35px;
+ width: 35px;
+ line-height: 35px;
+ text-align: center;
+ border-radius: 5px;
+ display: inline-block;
+}
+
+/*======================================
+ ======= Listing Single Page CSS =======
+ ======================================= */
+
+ .listing-single-banner-view-photos-btn{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.listing-single-banner-icons{
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+.listing-single-banner-view-photos-btn .btn{
+  color: var(--black);
+  background-color: var(--white);
+  border-color: var(--white);
+  padding: 8px 14px;
+}
+.listing-single-banner-icons a{
+  background-color: var(--white);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 33px;
+  color: var(--blue);
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2px;
+}
+.listing-single-title-heading h3{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.listing-single-details-area-tags-n-details{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.listing-single-box-heading{
+  font-size: 20px;
+}
+.listing-single-title-price-icons span{
+  color: var(--blue);
+  font-size: 22px;
+}
+.listed-by-img img{
+  width: 80px;
+}
+.listed-by-txt p{
+  line-height: 16px;
+}
+.listed-by-txt a{
+  font-size: 13px;
+}
+.listing-single-details-area-tags span{
+  background-color: var(--bg-light);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--blue);
+  margin: 0px 2px 6px 0px;
+}
+.listing-single-property-details-lists ul li{
+  line-height: 25px;
+}
+.listing-single-property-details-lists ul li span{
+  float: right;
+  font-weight: 600;
+}
+.listing-single-property-attachment-files-area span{
+  font-size: 30px;
+  display: inline-block;
+  background-color: var(--bg-light);
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 55px;
+}
+.listing-single-features-lists-box{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-top: 25px;
+}
+.listing-single-features-lists ul{
+  display: inline;
+}
+.listing-single-features-lists ul li{
+  line-height: 30px;
+  display: inline-block;
+  margin: 2px;
+}
+.listing-single-location-box{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-top: 25px;
+}
+.listing-single-floor-plans{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-top: 25px;
+}
+.listing-single-floor-specs{
+  background-color: var(--bg-light);
+  padding: 10px;
+  border-radius: 5px;
+}
+.listing-single-property-video{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-top: 25px;
+}
+.listing-single-property-video img{
+  border-radius: 5px;
+  filter: brightness(80%);
+}
+.listing-single-reviews-box{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-top: 25px;
+}
+.listing-single-similar-properties{
+  margin-top: 25px;
+}
+
+/*======================================
+ ======== Login Signup Modal CSS =======
+ ======================================= */
+
+.modal-content{
+  padding: 20px;
+}
+.login-form .form-group span,
+.signup-form .form-group span{
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  color: #adadad;
+}
+.remember-me-checkbox{
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+}
+.login-form-heading h4,
+.signup-form-heading h4{
+  font-size: 20px;
+}
+
+/*======================================
+ ======== Owl Carousel Nav CSS =========
+ ======================================= */
+
+.owl-nav{
+  margin-top: -25px!important;
+  opacity: 0;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+} 
+.owl-carousel:hover .owl-nav{
+  opacity: 1;
+}
+.owl-nav button.owl-prev span{
+  position: absolute;
+  top: 50%;
+  left: 28px;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: var(--white);
+}
+.owl-nav button.owl-next span{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: var(--white);
+}
+
+/*======================================
+ ============= Grid Page CSS ===========
+ ======================================= */
+
+.blogs-grid-banner{
+  background-image: url(../images/blogs-grid-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.blogs-grid-banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000b2;
+}
+
+
+/*================================================
+ ============== Featured Properties CSS ==========
+ ================================================== */
+
+ .featured-property-box{
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+.featured-property-box-img img{
+  filter: brightness(70%);
+}
+.featured-property-box-heading{
+  color: var(--black)!important;
+  font-size: 18px;
+  font-weight: bold;
+}
+.featured-property-box-tag{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  background-color: #3e4c66;
+  color: var(--white);
+}
+.featured-property-box-price{
+ position: absolute;
+ bottom: 10px;
+ left: 10px;
+ color: var(--white);
+ font-size: 22px;
+ font-family: bold;
+}
+.featured-property-box-share-icon{
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ background-color: #0f151fc9;
+ color: var(--white)!important;
+ display: block;
+ border-radius: 5px;
+ height: 33px;
+ width: 33px;
+ line-height: 34px;
+ text-align: center;
+}
+.featured-property-box-heart-icon{
+ position: absolute;
+ top: 10px;
+ right: 50px;
+ background-color: #0f151fc9;
+ color: var(--white)!important;
+ display: block;
+ border-radius: 5px;
+ height: 33px;
+ width: 33px;
+ line-height: 34px;
+ text-align: center;
+}
+.featured-property-box-user img{
+ width: 40px!important;
+}
+.featured-property-box-footer{
+ border-top: 1px solid #eeeeee;
+ margin-top: 15px;
+ padding-top: 15px;
+}
+
+ /*======================================
+ ============ Articles & Tips CSS =======
+ ======================================= */
+
+ .blog{
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+.blog-img img{
+  filter: brightness(70%);
+}
+.blog-heading{
+  color: var(--black)!important;
+  font-size: 18px;
+  font-weight: bold;
+}
+ .blog-share-icon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0f151fc9;
+  color: var(--white)!important;
+  display: block;
+  border-radius: 5px;
+  height: 33px;
+  width: 33px;
+  line-height: 34px;
+  text-align: center;
+ }
+ .blog-heart-icon{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: #0f151fc9;
+  color: var(--white)!important;
+  display: block;
+  border-radius: 5px;
+  height: 33px;
+  width: 33px;
+  line-height: 34px;
+  text-align: center;
+ }
+.blog-user img{
+ width: 40px!important;
+}
+.blog-footer{
+ border-top: 1px solid #eeeeee;
+ margin-top: 15px;
+ padding-top: 15px;
+}
+
+/*=======================================
+ ============= Stats Section CSS ========
+ ======================================== */
+
+ #stats{
+  background-image: url(../images/stats-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#stats::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000093;
+}
+.stat-icon{
+  display: inline-block;
+  color: var(--white);
+  height: 70px;
+  width: 70px;
+  font-size: 25px;
+  line-height: 70px;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+.stat-count{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/*======================================
+ ============= Pagination CSS ==========
+ ======================================= */
+
+ .my-pagination a{
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  padding: 8px 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.my-pagination a:focus {
+  background-color: var(--blue)!important;
+  color: var(--white);
+}
+
+
+ /*======================================
+ =======  Video Icon Animation CSS ======
+ ======================================= */
+
+  .video-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    color: var(--white)!important;
+    background-color: var(--blue);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .video-icon::after, .video-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    border-radius: 50%;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-animation: ripple 1.5s ease-out infinite;
+           animation: ripple 1.5s ease-out infinite;
+    background-color: var(--blue);
+    z-index: -1;
+    }    
+    @keyframes ripple {
+    0%, 35% {
+     -webkit-transform: scale(0);
+             transform: scale(0);
+     opacity: 1;
+    }
+    50% {
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+     opacity: 0.8;
+    }
+    100% {
+     opacity: 0;
+     -webkit-transform: scale(1.8);
+             transform: scale(1.8);
+    }
+    }
+
+/*======================================
+ ======== Pages Search Area CSS ========
+ ======================================= */
+
+ .pages-search-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-search-box a{
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: #adadad;
+}
+.product-categories-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.product-categories-box span{
+  float: right;
+}
+.recent-products-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.featured-listing-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-selection-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-selection-box .form-group a{
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  color: #adadad;
+}
+.pages-selection-box .form-control{
+  height: 42px;
+}
+.pages-selection-box .nice-select{
+  float: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  line-height: 28px;
+  border: 1px solid #ced4da;
+}
+
+.pages-selection-box .nice-select:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
+}
+
+.pages-mortgage-calculator-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-mortgage-calculator-box .form-group span{
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  color: #adadad;
+}
+.pages-mortgage-calculator-box .form-control{
+  height: 42px;
+}
+.pages-mortgage-calculator-box .nice-select{
+  float: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  line-height: 28px;
+  border: 1px solid #ced4da;
+}
+
+.pages-mortgage-calculator-box .nice-select:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
+}
+.featured-listing-box .media-left img{
+  width: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.recent-products-box .media-left img{
+  border-radius: 5px;
+  width: 100px;
+  margin-right: 10px;
+}
+.pages-search-area h3{
+  font-weight: bold;
+  font-size: 18px;
+}
+.pages-search-area-tags{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-search-area-tags a{
+  background-color: #f1f1f1;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.listing-pages-listed-by-box{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-bottom: 25px;
+}
+.listing-pages-listed-by-box input{
+  height: 42px;
+  margin-bottom: 1rem;
+}
+
+/*======================================
+ ========= Pages Search Box CSS ========
+ ======================================= */
+
+ .pages-search-box-input{
+  margin-bottom: 1rem;
+}
+.pages-header-search-box{
+  background-color: var(--white);
+  padding: 2rem 2rem 1rem 2rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.pages-search-box-input .nice-select{
+ float: none;
+ border-radius: 5px;
+ margin-bottom: 1rem;
+ height: 50px;
+ padding: 6px 12px;
+ line-height: 35px;
+ border: 1px solid #ced4da;
+}
+.pages-search-box-input .nice-select:focus{
+ border-color: var(--blue);
+ box-shadow: 0 0 5px 0 var(--blue);
+}
+.pages-search-box-input-icon{
+   position: absolute;
+   right: 25px;
+   top: 18px;
+   color: #adadad;
+}
+
+/*======================================
+ =========== Search Bar CSS ===========
+ ======================================= */
+
+ .search-bar{
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  border-radius: 5px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.search-area-options .nice-select{
+  color: var(--black);
+  background: transparent;
+  border: none;
+  line-height: 52px;
+  padding-left: 5px;
+}
+.search-area-options .nice-select:after{
+  margin-top: 2px;
+}
+
+

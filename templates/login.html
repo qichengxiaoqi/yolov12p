@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>TRS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="signinform">
+        <h1>TRS Login Form</h1>
+        <div class="container">
+            <div class="w3l-form-info">
+                <div class="w3_info">
+                    <h2>Login</h2>
+                    <!-- ★1. 修改表单结构和ID -->
+                    <form id="loginForm">  <!-- 添加表单ID -->
+                        <div class="input-group">
+                            <span><i class="fas fa-user"></i></span>
+                            <!-- ★2. 添加输入框ID -->
+                            <input type="email" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <span><i class="fas fa-key"></i></span>
+                            <!-- ★3. 修正密码框属性和ID -->
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <!-- ★4. 添加错误提示容器 -->
+                        <div id="errorMsg" class="error-message"></div>
+                        <div class="form-row bottom">
+                            <div class="form-check">
+                                <!-- ★5. 修正拼写错误和ID -->
+                                <input type="checkbox" id="remember">
+                                <label for="remember"> Remember me</label>
+                            </div>
+                            <a href="#url" class="forgot">Forgot password?</a>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">Login</button>
+                    </form>
+                    <p class="account">Don't have an account? <a href="#signup">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2020 Service login form.</p>
+        </div>
+    </div>
+
+    <!-- ★6. 引入分离的JS文件 -->
+    <script src="js/assets/auth.js"></script>
+    <script src="js/assets/fontawesome.js"></script>
+    <script src="js/assets/users_info.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ESTLO - A Responsive Real Estate HTML Template">
+    <meta name="author" content="TeamEssential">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESTLO - A Responsive Real Estate HTML Template</title>
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="loading">
+                <div class="bounceball"></div>
+                <div class="text">NOW LOADING</div>
+            </div>
+        </div>
+        <!-- Top-Header -->
+        <div class="top-header py-2 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 align">
+                        <div class="top-header-mail">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="top-header-search-box">
+                            <form>
+                                <div class="form-group relative mb-0">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-4 align">
+                        <div class="top-header-login text-right">
+                            <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="far fa-sign-in mr-2"></i>Login or Register</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="nav-colored navbar navbar-expand-lg navbar-light" id="mynavbar">
+            <div class="container">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggle-icon color-white"><i class="fab fa-get-pocket"></i></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" id="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="introduction.html">项目介绍</a>
+                        </li>
+
+                    </ul>
+                    <span class="nav-btn ml-2">
+                        <a class="btn" href="contact-page.html">开始预测</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login & Signup Modal -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content radius">
+                <div class="signup-login">
+                    <div class="login-form">
+                        <div class="login-form-heading mb-4 text-center">
+                            <h4 class="bold">Login to your account</h4>
+                            <p class="d-flex justify-content-center">if you don't have an account<a href="#" data-target=".signup-login" data-show=".signup-form" class="ml-1 show bold">Create an Account</a></p>
+                        </div>
+                        <form method="POST">
+                            <div class="form-group relative">
+                                <input class="form-control" type="email" placeholder="Email" required>
+                                <span><i class="fas fa-lock"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group d-flex relative">
+                                <input class="remember-me-checkbox form-control mr-2" type="checkbox">
+                                <p class="align">Remember Me!</p>
+                            </div>
+                            <button type="submit" class="w-100 btn">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="signup-form hide">
+                        <div class="signup-form-heading mb-4 text-center">
+                            <h4 class="bold">Create your account</h4>
+                            <p class="d-flex justify-content-center">Already have an account?<a href="#" data-target=".signup-login" data-show=".login-form" class="ml-1 show bold">Login to your account</a></p>
+                        </div>
+                        <form method="POST">
+                            <div class="signup-form-name-boxes d-flex">
+                                <div class="form-group w-100 relative">
+                                    <input class="form-control" type="text" placeholder="First Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                                <div class="form-group w-100 ml-2 relative">
+                                    <input class="form-control" type="text" placeholder="Last Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="email" placeholder="Your Email" required>
+                                <span><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Repeat Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group d-flex relative">
+                                <input class="remember-me-checkbox form-control mr-2" type="checkbox" required>
+                                <p class="align">I agree to Terms & Conditions</p>
+                            </div>
+                            <button type="submit" class="w-100 btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- picture -->
+
+    <section id="about-us" class="bg-light pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="about-us-page-textarea mb-50">
+                        <h2 class="bold mb-4">Our Mission is to Find you a House</h2>
+                        <p class="bold mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, similique cupiditate. Sunt quod, quae neque nihil, atque est dolorum voluptatem, incidunt consequuntur dolorem libero dolor sit amet.</p>
+                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore culpa, quidem consectetur soluta dicta fugiat atque aspernatur dolores praesentium, necessitatibus illo adipisci magni nemo quibusdam sapiente exercitationem ut recusandae sunt.</p>
+                        <div class="about-us-points-area mb-3">
+                            <div class="about-us-point mb-2 d-flex">
+                                <div class="mr-2"><i class="fas fa-angle-double-right"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="about-us-point mb-2 d-flex">
+                                <div class="mr-2"><i class="fas fa-angle-double-right"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="about-us-point mb-2 d-flex">
+                                <div class="mr-2"><i class="fas fa-angle-double-right"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="about-us-point d-flex">
+                                <div class="mr-2"><i class="fas fa-angle-double-right"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro. Aut quae deleniti corporis quo dolor fuga! Perspiciatis corrupti.</p>
+
+                        <div class="row g-3 align-items-start mt-4">
+                            <!-- 添加栅格容器 -->
+                            <!-- 图片上传 -->
+                            <div class="col-md-4">
+                                <!-- 分配6列 -->
+                                <div class="about-us-btn h-100">
+                                    <!-- 添加高度适应 -->
+                                    <label for="imageInput" class="btn custom-upload-btn w-100" onclick="uploadMedia()">
+                                        <i class="fas fa-upload mr-2"></i>上传图片
+                                    </label>
+                                    <input type="file" id="imageInput" name="file" accept="image/*, video/*" class="d-none">
+                                    <div class="mt-2 small text-muted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-us-img relative mb-50">
+                        <!-- 图片预览容器 -->
+                        <div id="imagePreview" class="image-preview-container">
+                            <div class="upload-prompt">
+                                <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                                <p class="mb-0">您还没上传图片</p>
+                            </div>
+                            <img id="displayImage" class="preview-image" alt="上传图片预览">
+                        </div>
+
+                        <!-- 处理按钮保持原视频按钮位置 -->
+                        <div class="processing-control">
+                            <button class="btn btn-primary mt-3" onclick="uploadMedia()">
+                                <i class="fas fa-magic mr-2"></i>智能分析
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Subscribe Section -->
+        <section id="subscribe-area">
+            <div class="container">
+                <div class="row">
+                    <div id="resultContainer">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="sub-box">
+                                <h2 class="color-white text-center mb-4 bold">预测结果</h2>
+<!--                                <div class="result-container relative">-->
+<!--                                    &lt;!&ndash; 原始结构保持 &ndash;&gt;-->
+<!--                                    <div class="status-display">-->
+<!--                                        &lt;!&ndash; 结果展示区 &ndash;&gt;-->
+<!--                                        <div class="result-content">-->
+<!--                                            <div class="result-text mb-3">-->
+<!--                                                <i class="fas fa-chart-line mr-2"></i>识别类别：<span class="color-primary">0</span>-->
+<!--                                            </div>-->
+<!--                                            <div class="result-text mb-3">-->
+<!--                                                <i class="fas fa-chart-line mr-2"></i>预测概率：<span class="color-primary">0%</span>-->
+<!--                                            </div>-->
+<!--                                            <div class="result-text mb-4">-->
+<!--                                                <i class="fas fa-clock mr-2"></i>处理耗时：<span class="color-muted">0秒</span>-->
+<!--                                            </div>-->
+<!--                                            <div>-->
+
+<!--                                            </div>-->
+<!--                                        </div>-->
+
+<!--                                        &lt;!&ndash; 加载状态 &ndash;&gt;-->
+<!--                                        <div class="loading-overlay">-->
+<!--                                            <div class="loading-spinner"></div>-->
+<!--                                            <div class="loading-text mt-2">AI分析中...</div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+<!--                                    &lt;!&ndash; 隐藏的图片预览容器（尺寸与原输入框相同） &ndash;&gt;-->
+<!--                                    <div class="image-preview mt-3" style="display: none;">-->
+<!--                                        <img src="placeholder.jpg" class="preview-image" alt="预测结果预览" style="max-width: 100%; height: auto;">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="lower-footer-copyright-area">
+                            <p>© 2025 All Rights Reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="lower-footer-privacy-area">
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- Jquery Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Venobox -->
+    <script src="assets/js/venobox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/process.js"></script>
+</body>
+
+</html>

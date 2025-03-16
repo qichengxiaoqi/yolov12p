@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ESTLO - A Responsive Real Estate HTML Template">
+    <meta name="author" content="TeamEssential">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESTLO - A Responsive Real Estate HTML Template</title>
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Nice Select -->       
+    <link rel="stylesheet" href="assets/css/nice-select.css">    
+    <!-- Venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>  
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="loading">
+              <div class="bounceball"></div>
+              <div class="text">NOW LOADING</div>
+            </div>
+        </div>
+    <!-- Top-Header -->
+    <div class="top-header py-2 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 align">
+                    <div class="top-header-mail">
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="top-header-search-box">
+                        <form>
+                            <div class="form-group relative mb-0">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 align">
+                    <div class="top-header-login text-right">
+                        <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="far fa-sign-in mr-2"></i>Login or Register</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="nav-colored navbar navbar-expand-lg navbar-light" id="mynavbar">
+        <div class="container">
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggle-icon color-white"><i class="fab fa-get-pocket"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="introduction.html">项目介绍</a>
+                  </li>
+
+              </ul>
+              <span class="nav-btn ml-2">
+                <a class="btn" href="contact-page.html">开始预测</a>
+              </span>
+            </div>
+          </div>
+    </nav>
+  </header>
+
+  <!-- Login & Signup Modal -->
+
+  <div class="modal fade" id="loginmodal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content radius">
+            <div class="signup-login">
+                <div class="login-form">
+                    <div class="login-form-heading mb-4 text-center">
+                          <h4 class="bold">Login to your account</h4>
+                          <p class="d-flex justify-content-center">if you don't have an account<a href="#" data-target=".signup-login" data-show=".signup-form" class="ml-1 show bold">Create an Account</a></p>
+                      </div>
+                      <form method="POST">
+                          <div class="form-group relative">
+                              <input class="form-control" type="email" placeholder="Email" required>
+                              <span><i class="fas fa-lock"></i></span>
+                          </div>
+                          <div class="form-group relative">
+                              <input class="form-control" type="password" placeholder="Password" required>
+                              <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div class="form-group d-flex relative">
+                              <input class="remember-me-checkbox form-control mr-2" type="checkbox">
+                              <p class="align">Remember Me!</p>
+                          </div>
+                          <button type="submit" class="w-100 btn">Login</button>
+                      </form>
+                  </div>
+
+                  <div class="signup-form hide">
+                    <div class="signup-form-heading mb-4 text-center">
+                          <h4 class="bold">Create your account</h4>
+                          <p class="d-flex justify-content-center">Already have an account?<a href="#" data-target=".signup-login" data-show=".login-form" class="ml-1 show bold">Login to your account</a></p>
+                      </div>
+                      <form method="POST">
+                          <div class="signup-form-name-boxes d-flex">
+                            <div class="form-group w-100 relative">
+                                <input class="form-control" type="text" placeholder="First Name" required>
+                                <span><i class="fas fa-user-alt"></i></span>
+                            </div>
+                            <div class="form-group w-100 ml-2 relative">
+                                <input class="form-control" type="text" placeholder="Last Name" required>
+                                <span><i class="fas fa-user-alt"></i></span>
+                            </div>
+                          </div>
+                          <div class="form-group relative">
+                            <input class="form-control" type="email" placeholder="Your Email" required>
+                            <span><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <div class="form-group relative">
+                            <input class="form-control" type="password" placeholder="Password" required>
+                            <span><i class="fas fa-key"></i></span>
+                        </div>
+                        <div class="form-group relative">
+                            <input class="form-control" type="password" placeholder="Repeat Password" required>
+                            <span><i class="fas fa-key"></i></span>
+                        </div>
+                          <div class="form-group d-flex relative">
+                              <input class="remember-me-checkbox form-control mr-2" type="checkbox" required>
+                              <p class="align">I agree to Terms & Conditions</p>
+                          </div>
+                          <button type="submit" class="w-100 btn">Sign Up</button>
+                      </form>
+                  </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- how it Works Section -->
+
+     <section id="how-it-works" class="bg-white pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1>How It Works?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="how-it-works-box relative mb-50 text-center">
+                        <span class="how-it-works-icon-box how-it-works-icon-box1"><i class="how-it-works-icon fal fa-receipt"></i></span>
+                        <h4>Evaluate Property</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have Ipsum available.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="how-it-works-box relative mb-50 text-center">
+                        <span class="how-it-works-icon-box how-it-works-icon-box2 relative"><i class="how-it-works-icon fal fa-user"></i></span>
+                        <h4>Meet Your Agent</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have Ipsum available.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="how-it-works-box relative mb-50 text-center">
+                        <span class="how-it-works-icon-box how-it-works-icon-box3"><i class="how-it-works-icon fal fa-shield-alt"></i></span>
+                        <h4>Close The Deal</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+   <!-- Featured Properties Section -->
+
+   <section id="featured-properties" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h1>Featured Properties</h1>
+            <p>Handpicked properties by our team</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div>
+              <div id="featured-properties-carousel" class="owl-carousel owl-theme">
+                  <div class="item">
+                      <div class="featured-property-box">
+                          <div class="featured-property-box-img relative">
+                              <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                              <p class="featured-property-box-tag bg-blue">Featured</p>
+                              <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                              <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                              <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                          </div>
+
+                          <div class="featured-property-box-textarea pt-3">
+                              <p class="color-blue">Apartment</p>
+                              <a href="property-grid.html" class="featured-property-box-heading">Decorated Flats</a>
+                              <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                              <div class="featured-property-box-specs d-flex">
+                                  <p>Beds: 4</p>
+                                  <p class="mx-2">Baths: 2</p>
+                                  <p>Sq. ft: 5230</p>
+                              </div>
+                              <div class="featured-property-box-footer d-flex justify-content-between">
+                                  <div class="featured-property-box-user d-flex w-100">
+                                      <img src="assets/images/blog-user.png" alt="img">
+                                      <p class="align ml-1">Ali Asif</p>
+                                  </div>
+                                  <p class="w-100 align text-right">3 Days Ago</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="featured-property-box">
+                        <div class="featured-property-box-img relative">
+                            <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                            <p class="featured-property-box-tag">On Rent</p>
+                            <p class="featured-property-box-price">$16,000<small>/mo</small></p>
+                            <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                            <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                        </div>
+
+                        <div class="featured-property-box-textarea pt-3">
+                            <p class="color-blue">Apartment</p>
+                            <a href="property-grid.html" class="featured-property-box-heading">Luxury Villa</a>
+                            <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                            <div class="featured-property-box-specs d-flex">
+                                <p>Beds: 3</p>
+                                <p class="mx-2">Baths: 1</p>
+                                <p>Sq. ft: 5000</p>
+                            </div>
+                            <div class="featured-property-box-footer d-flex justify-content-between">
+                                <div class="featured-property-box-user d-flex w-100">
+                                    <img src="assets/images/blog-user.png" alt="img">
+                                    <p class="align ml-1">Nomi Vin</p>
+                                </div>
+                                <p class="w-100 align text-right">9 Days Ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="featured-property-box">
+                        <div class="featured-property-box-img relative">
+                            <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                            <p class="featured-property-box-tag">For Sale</p>
+                            <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                            <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                            <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                        </div>
+
+                        <div class="featured-property-box-textarea pt-3">
+                            <p class="color-blue">Apartment</p>
+                            <a href="property-grid.html" class="featured-property-box-heading">Laurel Rooms</a>
+                            <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                            <div class="featured-property-box-specs d-flex">
+                                <p>Beds: 5</p>
+                                <p class="mx-2">Baths: 2</p>
+                                <p>Sq. ft: 5320</p>
+                            </div>
+                            <div class="featured-property-box-footer d-flex justify-content-between">
+                                <div class="featured-property-box-user d-flex w-100">
+                                    <img src="assets/images/blog-user.png" alt="img">
+                                    <p class="align ml-1">John Doe</p>
+                                </div>
+                                <p class="w-100 align text-right">7 Days Ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+</section>
+
+   <!-- Why Choose Us Section -->
+
+   <section id="why-choose-us" class="bg-white pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h1>Why Choose Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="why-choose-us-box mb-30 text-center relative">
+                    <div class="why-choose-us-box-icon">
+                        <span><i class="far fa-house-night"></i></span>
+                    </div>
+                    <div class="why-choose-us-box-textarea">
+                        <h4 class="bold">Find Your<br>Dream Home</h4>
+                        <p class="my-2">Lorem ipsum, dolor sit amet conse ctetur adipisi cing elit. ipsum elit txt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="why-choose-us-box mb-30 text-center relative">
+                    <div class="why-choose-us-box-icon">
+                        <span><i class="fal fa-user-tie"></i></span>
+                    </div>
+                    <div class="why-choose-us-box-textarea">
+                        <h4 class="bold">Experienced<br>Agents</h4>
+                        <p class="my-2">Lorem ipsum, dolor sit amet conse ctetur adipisi cing elit. ipsum elit txt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="why-choose-us-box mb-30 text-center relative">
+                    <div class="why-choose-us-box-icon">
+                        <span><i class="fal fa-hand-holding-usd"></i></span>
+                    </div>
+                    <div class="why-choose-us-box-textarea">
+                        <h4 class="bold">Buy or Rent<br>Homes</h4>
+                        <p class="my-2">Lorem ipsum, dolor sit amet conse ctetur adipisi cing elit. ipsum elit txt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="why-choose-us-box mb-30 text-center relative">
+                    <div class="why-choose-us-box-icon">
+                        <span><i class="fal fa-home-heart"></i></span>
+                    </div>
+                    <div class="why-choose-us-box-textarea">
+                        <h4 class="bold">List Your<br>Own Property</h4>
+                        <p class="my-2">Lorem ipsum, dolor sit amet conse ctetur adipisi cing elit. ipsum elit txt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Property Cites Section -->
+
+<section id="propertiy-cities" class="pb-70 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h1>Find Properties in These Cities</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="property-cities-img">
+                  <img src="assets/images/properties/pc-2.jpg" class="radius mb-30 w-100" alt="img">
+                  <div class="property-city-content color-white">
+                      <h4>New York</h4>
+                      <p>6 Properties</p>
+                  </div>
+              </div>
+
+              <div class="property-cities-img">
+                  <img src="assets/images/properties/pc-3.jpg" class="radius mb-30 w-100" alt="img">
+                  <div class="property-city-content color-white">
+                      <h4>Los Angeles</h4>
+                      <p>7 Properties</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="property-cities-img">
+                <img src="assets/images/properties/pc-1.jpg" class="radius mb-30 w-100" alt="img">
+                <div class="property-city-content color-white">
+                  <h4>San Fancisco</h4>
+                  <p>4 Properties</p>
+               </div>
+            </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6">
+              <div class="property-cities-img">
+                  <img src="assets/images/properties/pc-4.jpg" class="radius mb-30 w-100" alt="img">
+                  <div class="property-city-content color-white">
+                      <h4>San Diago</h4>
+                      <p>6 Properties</p>
+                  </div>
+              </div>
+              <div class="property-cities-img">
+                  <img src="assets/images/properties/pc-5.jpg" class="radius mb-30 w-100" alt="img">
+                  <div class="property-city-content color-white">
+                      <h4>Kingston</h4>
+                      <p>3 Properties</p>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Stats Section -->
+
+    <section id="stats" class="pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-box mb-30 bg-white radius py-4 text-center">
+                        <span class="stat-icon"><i class="fal fa-home"></i></span>
+                        <h4 class="mt-4 stat-count">2243</h4>
+                        <p class="text-muted">For Sale Listing</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-box mb-30 bg-white radius py-4 text-center">
+                        <span class="stat-icon"><i class="fal fa-house-return"></i></span>
+                        <h4 class="mt-4 stat-count">1965</h4>
+                        <p class="text-muted">For Rent Listing</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-box mb-30 bg-white radius py-4 text-center">
+                        <span class="stat-icon"><i class="fal fa-user-headset"></i></span>
+                        <h4 class="mt-4 stat-count">1243</h4>
+                        <p class="text-muted">User Agents</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-box mb-30 bg-white radius py-4 text-center">
+                        <span class="stat-icon"><i class="fal fa-briefcase"></i></span>
+                        <h4 class="mt-4 stat-count">2000</h4>
+                        <p class="text-muted">Booking Properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+
+    <section id="client" class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="client-carousel" class="owl-carousel owl-theme">
+                        <div class="client-logo">
+                            <img src="assets/images/client/c1.png" class="w-100" alt="logo">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/images/client/c2.png" class="w-100" alt="logo">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/images/client/c3.png" alt="logo">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/images/client/c4.png" alt="logo">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/images/client/c5.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Our Properties Section -->
+
+ <section id="our-properites" class="bg-white"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h1>Recent Properties</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">Limited</p>
+                        <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Decorated Flats</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 4</p>
+                            <p class="mx-2">Baths: 2</p>
+                            <p>Sq. ft: 5230</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Ali Asif</p>
+                            </div>
+                            <p class="w-100 align text-right">3 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">On Rent</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Luxury Villa</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 3</p>
+                            <p class="mx-2">Baths: 1</p>
+                            <p>Sq. ft: 5000</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Nomi Vin</p>
+                            </div>
+                            <p class="w-100 align text-right">9 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">For Sale</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Laurel Rooms</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 5</p>
+                            <p class="mx-2">Baths: 2</p>
+                            <p>Sq. ft: 5320</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">John Doe</p>
+                            </div>
+                            <p class="w-100 align text-right">7 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">Limited</p>
+                        <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Decorated Flats</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 4</p>
+                            <p class="mx-2">Baths: 2</p>
+                            <p>Sq. ft: 5230</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Ali Asif</p>
+                            </div>
+                            <p class="w-100 align text-right">3 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">On Rent</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Luxury Villa</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 3</p>
+                            <p class="mx-2">Baths: 1</p>
+                            <p>Sq. ft: 5000</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Nomi Vin</p>
+                            </div>
+                            <p class="w-100 align text-right">9 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">For Sale</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="featured-property-box-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="featured-property-box-heading">Laurel Rooms</a>
+                        <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
+                        <div class="featured-property-box-specs d-flex">
+                            <p>Beds: 5</p>
+                            <p class="mx-2">Baths: 2</p>
+                            <p>Sq. ft: 5320</p>
+                        </div>
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">John Doe</p>
+                            </div>
+                            <p class="w-100 align text-right">7 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="all-properties-btn text-center">
+                    <a href="property-grid.html" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+    <!-- Video Section -->
+
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="video-btn">
+                        <a class="video-icon venobox" data-vbtype="video" href="#"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+     <!-- Team Section -->
+
+     <section id="team" class="pb-70 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1>Our Agents</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-box mb-30">
+                        <div class="team-img">
+                            <img src="assets/images/team/1.jpg" class="w-100" alt="img">
+                        </div>
+                        <div class="team-textarea px-2 mt-4">
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Lily Bicharm</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-box mb-30">
+                        <div class="team-img">
+                            <img src="assets/images/team/2.jpg" class="w-100" alt="img">
+                        </div>
+                        <div class="team-textarea px-2 mt-4">
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Jack London</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-box mb-30">
+                        <div class="team-img">
+                            <img src="assets/images/team/3.jpg" class="w-100" alt="img">
+                        </div>
+                        <div class="team-textarea px-2 mt-4">
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Denis Albo</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonal Section -->
+
+    <section id="testimonial" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1>Happy Clients</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+
+                    <div id="testimonial-carousel" class="owl-carousel owl-theme">
+                        <div class="testimonial-box text-center relative bg-white">
+                            <img src="assets/images/img-1.jpg" class="testimonial-img rounded-circle" alt="img">
+                            <h4>William Blake</h4>
+                            <p class="text-muted small">ENGINEER</p>
+                            <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                            <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
+                        </div>
+
+                        <div class="testimonial-box text-center relative bg-white">
+                            <img src="assets/images/img-2.jpg" class="testimonial-img rounded-circle" alt="img">
+                            <h4>Illina D'Cruz</h4>
+                            <p class="text-muted small">ENGINEER</p>
+                            <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                            <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
+                        </div>
+
+                        <div class="testimonial-box text-center relative bg-white">
+                            <img src="assets/images/img-3.jpg" class="testimonial-img rounded-circle" alt="img">
+                            <h4>John Doe</h4>
+                            <p class="text-muted small">ENGINEER</p>
+                            <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                            <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Articles & Tips Section -->
+
+ <section id="articles" class="bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h1>Articles & Tips</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="blog-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="blog-heading">This is a standard post</a>
+                        <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Ali Asif</p>
+                            </div>
+                            <p class="w-100 align text-right">3 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
+                        <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="blog-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="blog-heading">Luxury Villa at low Price</a>
+                        <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">Nomi Vin</p>
+                            </div>
+                            <p class="w-100 align text-right">9 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
+                        <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+                    <div class="blog-textarea pt-3">
+                        <p class="color-blue">Apartment</p>
+                        <a href="property-grid.html" class="blog-heading">Neat and Clean Rooms</a>
+                        <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
+                                <p class="align ml-1">John Doe</p>
+                            </div>
+                            <p class="w-100 align text-right">7 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="blogs-btn text-center">
+                    <a href="blog-grid.html" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  
+  <footer>
+      <!-- Footer Subscribe Section -->
+    <section id="subscribe-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="sub-box">
+                        <h2 class="color-white text-center mb-4 bold">Subscribe to Our Newsletter</h2>
+                        <form class="relative">
+                        <input class="form-control" type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Middle Section -->
+
+    <div class="upper-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-logo-area mb-50">
+
+                        <div class="footer-logo mb-3">
+                            <a href="index.html"><img src="assets/images/logo-dark.png" class="w-50" alt="img"></a>
+                        </div>
+
+                        <div class="footer-text-area mt-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at molestias nulla? Voluptas eligendi, provident sapiente.</p>
+                        </div>
+
+                        <div class="footer social-icons mt-3">
+                            <a class="color-white mr-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="color-white mr-3" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="color-white mr-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="color-white mr-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="color-white" href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-latest-news mb-50">
+                        <div class="footer-list-heading">
+                            <h4>Quick Links</h4>
+                        </div>
+                        <div class="footer-list">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>                               
+                                <li><a href="#our-properites">Properties</a></li>                               
+                                <li><a href="#team">Our Team</a></li>                               
+                                <li><a href="#articles">Articles</a></li>                               
+                                <li><a href="contact-page.html">Contact</a></li>                                                                                   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-latest-news mb-50">
+                        <div class="footer-list-heading">
+                            <h4>Support</h4>
+                        </div>
+                        <div class="footer-list">
+                            <p class="color-white mb-2">Feel Free To Contact</p>
+                            <ul class="list-unstyled">
+                                <li><p><i class="fas fa-map-marker-alt mr-2"></i>121 King Melbou Australia</p></li>                               
+                                <li><p><i class="fas fa-phone-alt mr-2"></i><a href="tel:111222333">111-222-333</a></p></li>                                                             
+                                <li><p><i class="fas fa-envelope mr-2"></i><a href="mailto:info@dummy.org">info@dummy.org</a></p></li>  
+                                <li><p><i class="fas fa-globe mr-2"></i>www.yourdomain.com</p></li>                                                                                         
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-map mb-50">
+                        <iframe src="https://www.amap.com/" sandbox=""  height="200" style="border:0; width: 100%; margin-bottom: -6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+       
+                </div>
+            </div>
+        </div>
+
+        <!-- Lower Footer Section -->
+
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="lower-footer-copyright-area">
+                            <p>© 2025 All Rights Reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="lower-footer-privacy-area">
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</footer>
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- Jquery Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Venobox -->
+    <script src="assets/js/venobox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

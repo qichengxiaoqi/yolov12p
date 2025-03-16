@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 头部样式保持不变 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traffic Sign Classification System</title>
+  <style>
+    /* 原有样式保持不变 */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 20px 0; text-align: center; }
+    nav ul { list-style: none; margin: 0; padding: 0; text-align: center; background: #444; }
+    nav ul li { display: inline-block; }
+    nav ul li a { display: block; padding: 15px 20px; color: #fff; text-decoration: none; }
+    nav ul li a:hover { background: #555; }
+    .container { width: 80%; margin: 20px auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .upload-section, .result-section, .info-section { margin-bottom: 30px; }
+    input[type="file"] { margin-top: 10px; }
+    button { background: #333; color: #fff; border: none; padding: 10px 20px; margin-top: 10px; cursor: pointer; }
+    button:hover { background: #555; }
+    #resultContainer img { max-width: 100%; border: 1px solid #ddd; margin-top: 15px; }
+    .loading { color: #666; font-style: italic; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <!-- 页面结构保持不变 -->
+  <header>
+    <h1>Traffic Sign Classification System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#upload">Upload Image</a></li>
+      <li><a href="#result">Results</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- 上传区域 -->
+    <section id="upload" class="upload-section">
+      <h2>Upload Traffic Sign Image</h2>
+      <p>Select an image or video to classify traffic signs using our YOLOv12 model.</p>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageInput" name="file" accept="image/*, video/*">
+        <br>
+        <button type="button" onclick="uploadMedia()">Classify</button>
+      </form>
+    </section>
+
+    <!-- 结果显示区域 -->
+    <section id="result" class="result-section">
+      <h2>Classification Results</h2>
+      <div id="resultContainer">
+        <!-- 结果将通过JavaScript动态插入 -->
+      </div>
+    </section>
+
+    <!-- 关于区域保持不变 -->
+    <section id="about" class="info-section">
+      <h2>About the System</h2>
+      <p>This system is powered by a YOLOv12 model trained to classify traffic signs. It leverages advanced deep learning techniques to detect and classify traffic signs in real time.</p>
+      <ul>
+        <li><strong>Real-time Detection:</strong> Quickly identifies traffic signs in images.</li>
+        <li><strong>High Accuracy:</strong> Trained on a comprehensive dataset for robust classification.</li>
+        <li><strong>User-friendly Interface:</strong> Simplifies image uploads and clearly displays results.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+  // 修改后的上传函数
+  async function uploadMedia() {
+    const input = document.getElementById('imageInput');
+    const resultContainer = document.getElementById('resultContainer');
+    const file = input.files[0];
+
+    if (!file) {
+      showError('请先选择文件');
+      return;
+    }
+
+    // 显示加载状态
+    resultContainer.innerHTML = '<p class="loading">处理中，请稍候...</p>';
+
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch('/predict', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || '服务器错误');
+      }
+
+      const data = await response.json();
+
+      // 显示处理结果
+      resultContainer.innerHTML = `
+        <h3>检测结果</h3>
+        <div class="result-content">
+          ${data.result_url.endsWith('.mp4') ?
+            `<video controls><source src="${data.result_url}" type="video/mp4"></video>` :
+            `<img src="${data.result_url}" alt="检测结果">`
+          }
+          <div class="result-meta">
+            <p>文件名称: ${file.name}</p>
+            <p>文件类型: ${file.type}</p>
+            <p>处理时间: ${data.processing_time || 'N/A'} 秒</p>
+          </div>
+        </div>
+      `;
+
+    } catch (error) {
+      showError(error.message);
+    }
+  }
+
+  function showError(message) {
+    const resultContainer = document.getElementById('resultContainer');
+    resultContainer.innerHTML = `<p class="error">错误: ${message}</p>`;
+    setTimeout(() => resultContainer.innerHTML = '', 3000);
+  }
+  </script>
+</body>
+</html>

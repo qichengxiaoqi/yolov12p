@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ESTLO - A Responsive Real Estate HTML Template">
+    <meta name="author" content="TeamEssential">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESTLO - A Responsive Real Estate HTML Template</title>
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Nice Select -->       
+    <link rel="stylesheet" href="assets/css/nice-select.css">    
+    <!-- Venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>  
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="loading">
+              <div class="bounceball"></div>
+              <div class="text">NOW LOADING</div>
+            </div>
+        </div>
+    <!-- Top-Header -->
+    <div class="top-header py-2 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 align">
+                    <div class="top-header-mail">
+                        <a class="color-white mr-2" href="mailto:info@dummt.org"><i class="fal fa-envelope mr-2"></i>info@dummy.org</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="top-header-search-box">
+                        <form>
+                            <div class="form-group relative mb-0">
+                                <input class="form-control" type="text" placeholder="Search by ID" required>
+                                <button class="top-header-search-icon" type="submit"><i class="fal fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 align">
+                    <div class="top-header-login text-right">
+                        <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="far fa-sign-in mr-2"></i>Login or Register</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="nav-colored navbar navbar-expand-lg navbar-light" id="mynavbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo-dark.png" class="img-fluid" alt="logo"></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggle-icon color-white"><i class="fab fa-get-pocket"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="property-grid.html">Properties</a>
+                </li>
+                  <li class="nav-item drpdwn-item">
+                    <span class="nav-link">Blogs</span>
+                    <ul class="drpdwn-menu">
+                        <li class="drpdwn-link"><a class="nav-link" href="blog-grid.html">Blogs Grid</a></li>
+                        <li class="drpdwn-link"><a class="nav-link" href="blogs-list.html">Blogs List</a></li>
+                    </ul>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#testimonial">Testimonials</a>
+                  </li>
+              </ul>
+              <span class="nav-btn ml-2">
+                <a class="btn" href="contact-page.html">Contact Now</a>
+              </span>
+            </div>
+          </div>
+    </nav>
+  </header>
+
+    <!-- Login & Signup Modal -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content radius">
+                <div class="signup-login">
+                    <div class="login-form">
+                        <div class="login-form-heading mb-4 text-center">
+                              <h4 class="bold">Login to your account</h4>
+                              <p class="d-flex justify-content-center">if you don't have an account<a href="#" data-target=".signup-login" data-show=".signup-form" class="ml-1 show bold">Create an Account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="form-group relative">
+                                  <input class="form-control" type="email" placeholder="Email" required>
+                                  <span><i class="fas fa-lock"></i></span>
+                              </div>
+                              <div class="form-group relative">
+                                  <input class="form-control" type="password" placeholder="Password" required>
+                                  <span><i class="fas fa-key"></i></span>
+                              </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox">
+                                  <p class="align">Remember Me!</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Login</button>
+                          </form>
+                      </div>
+    
+                      <div class="signup-form hide">
+                        <div class="signup-form-heading mb-4 text-center">
+                              <h4 class="bold">Create your account</h4>
+                              <p class="d-flex justify-content-center">Already have an account?<a href="#" data-target=".signup-login" data-show=".login-form" class="ml-1 show bold">Login to your account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="signup-form-name-boxes d-flex">
+                                <div class="form-group w-100 relative">
+                                    <input class="form-control" type="text" placeholder="First Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                                <div class="form-group w-100 ml-2 relative">
+                                    <input class="form-control" type="text" placeholder="Last Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                              </div>
+                              <div class="form-group relative">
+                                <input class="form-control" type="email" placeholder="Your Email" required>
+                                <span><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Repeat Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox" required>
+                                  <p class="align">I agree to Terms & Conditions</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Sign Up</button>
+                          </form>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Single V1 Section -->
+
+  <section id="single-v2" class="pb-70 pt-0">
+      <div class="single-v2-banner relative mb-50">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-v2-banner-img">
+                        <img src="assets/images/listing-single-banner/ls1.jpg" class="w-100" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="single-v2-banner-img">
+                        <img src="assets/images/listing-single-banner/ls2.jpg" class="w-100" alt="img">
+                        <img src="assets/images/listing-single-banner/ls3.jpg" class="w-100" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="single-v2-banner-img">
+                        <img src="assets/images/listing-single-banner/ls4.jpg" class="w-100" alt="img">
+                        <img src="assets/images/listing-single-banner/ls5.jpg" class="w-100" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="listing-single-banner-view-photos-btn">
+                <a href="assets/images/listing-single-banner/ls1.jpg" data-gall="listing-gall" class="venobox btn"><i class="mr-2 fas fa-camera"></i>View Photos </a>
+                <a href="assets/images/listing-single-banner/ls2.jpg" data-gall="listing-gall" class="venobox"></a>
+                <a href="assets/images/listing-single-banner/ls3.jpg" data-gall="listing-gall" class="venobox"></a>
+                <a href="assets/images/listing-single-banner/ls4.jpg" data-gall="listing-gall" class="venobox"></a>
+                <a href="assets/images/listing-single-banner/ls5.jpg" data-gall="listing-gall" class="venobox"></a>
+            </div>
+
+            <div class="listing-single-banner-icons">
+                <a href="#"><i class="fas fa-share-alt"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-share"></i></a>
+                <a href="#"><i class="fas fa-receipt"></i></a>
+            </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="listing-single-title-heading mb-50">
+                      <h3>Luxury Family Home</h3>
+                      <p>1421 San Pedro St, Los Angeles, CA 90015</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 align">
+                <div class="listing-single-title-price mb-50 float-right d-flex">
+                    <h4>$13,000/mo</h4>
+                    <div class="ml-2 listing-single-title-price-icons align">
+                        <span><i class="fas fa-thumbs-up"></i></span>
+                        <span class="mx-1"><i class="fas fa-share-alt-square"></i></span>
+                        <span><i class="fas fa-print"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 col-md-12">
+                <div class="listing-single-details-area">
+                    <div class="listing-single-details-area-tags-n-details">
+                      <div class="listing-single-details-area-tags"> 
+                        <span>Apartment</span>
+                        <span>Beds 3</span>
+                        <span>Baths 2</span>
+                        <span>Sq Ft. 5280</span>
+                      </div>
+                      <div class="listing-single-description">
+                          <h4 class="listing-single-box-heading bold my-4">Description</h4>
+                          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="bold">Ut, numquam eius aliquam expedita repellendus porro pariatur et dolor dicta nesciunt accusantium quia beatae unde dolore tempora quo illo iusto consectetur.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto fugit deleniti quis nobis maiores quos incidunt delectus obcaecati cupiditate consectetur beatae? Reiciendis qui sint adipisci iste. Et, minima nemo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium unde quos exercitationem quod earum vel ipsa tenetur nihil vitae in alias doloremque saepe reiciendis, perferendis quas suscipit, debitis consequatur velit.</p>
+                      </div>
+                      
+                      <div class="line"></div>
+
+                      <div class="listing-single-property-details">
+                        <h4 class="listing-single-box-heading bold mb-4">Property Details</h4>
+                        <div class="listing-single-property-details-lists d-flex">
+                            <ul class="w-100">
+                                <li><p>Property ID<span>HY36</span></p></li>
+                                <li><p>Price<span>$1,50,000</span></p></li>
+                                <li><p>Area<span>1600 Sq. Ft</span></p></li>
+                            </ul>
+
+                            <ul class="listing-single-property-details-list-2 w-100">
+                                <li><p>Property Type<span>Apartment</span></p></li>
+                                <li><p>Property Status<span>For Sale</span></p></li>
+                                <li><p>Garage Size<span>200 Sq. Ft</span></p></li>
+                            </ul>
+
+                            <ul class="w-100">
+                                <li><p>Bedrooms<span>6</span></p></li>
+                                <li><p>Bathrooms<span>3</span></p></li>
+                                <li><p>Garages<span>2</span></p></li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="listing-single-additional-details">
+                        <h4 class="listing-single-box-heading bold mb-4">Additional Details</h4>
+                        <div class="listing-single-property-details-lists d-flex">
+                            <ul class="w-100">
+                                <li><p>Deposit<span>20%</span></p></li>
+                                <li><p>Extra Rooms<span>Guest Bath</span></p></li>
+                            </ul>
+
+                            <ul class="listing-single-property-details-list-2 w-100">
+                                <li><p>Amenities<span>Clubhouse</span></p></li>
+                                <li><p>Equipment<span>Grill-Gas</span></p></li>
+                            </ul>
+
+                            <ul class="w-100">
+                                <li><p>Pool Size<span>300 Sq. Ft</span></p></li>
+                                <li><p>remodel year<span>1999</span></p></li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="line"></div>
+
+                        <div class="listing-single-property-attachment">
+                            <h4 class="listing-single-box-heading bold mb-4">Property Attachment</h4>
+                            <div class="listing-single-property-attachment-files-area d-flex justify-content-between">
+                                <div class="listing-single-property-attachment-file1 d-flex">
+                                    <span><i class="fas fa-file-pdf"></i></span>
+                                    <p class="align ml-2"><a href="#"><i class="fas fa-download mr-2"></i>Demo pdf Document</a></p>
+                                 </div>
+                                 <div class="listing-single-property-attachment-file2 d-flex">
+                                    <span><i class="fas fa-file-pdf"></i></span>
+                                    <p class="align ml-2"><a href="#"><i class="fas fa-download mr-2"></i>Demo pdf Document</a></p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listing-single-features-lists-box">
+                        <h4 class="listing-single-box-heading bold mb-4">Features</h4>
+                        <div class="listing-single-features-lists">
+                            <ul class="w-100">
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Air Conditioning</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Barbeque</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Dryer</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Laundry</p></li>
+                            </ul>
+    
+                            <ul class="listing-single-features-list-2 w-100">
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Lawn</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Microwave</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Gym</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Refrigerator</p></li>
+                            </ul>
+    
+                            <ul class="w-100">
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Swimming Pool</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>TV Cable</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Wifi</p></li>
+                                <li><p><span><i class="fas fa-check mr-1 color-blue"></i></span>Washer</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="listing-single-location-box">
+                        <h4 class="listing-single-box-heading bold mb-4">Loaction</h4>
+                        <iframe src="https://www.amap.com/" sandbox="" height="500" style="border-radius: 5px; border:0; width: 100%; filter: invert(80%); margin-bottom: -7px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="listing-single-floor-plans">
+                        <div class="listing-single-first-floor-plan mb-3">
+                            <div class="listing-single-floor-specs">
+                                <a class="color-black" href="#floor1" data-toggle="collapse">
+                                    <b class="mr-3">First Floor</b>Size<b> 1200Sqft </b>Baths <b>500Sqft</b> Price <b>$1500</b>
+                                </a>
+                            </div>
+                            <div id="floor1" class="collapse show">
+                                <img src="assets/images/floor_plan.png" class="w-100" alt="img">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iusto. Sit quo impedit, perferendis magni <b>nobis fugit odio itaque at nam, excepturi, libero ipsa laudantium. Nemo odit id laborum perspiciatis.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, maiores similique sapiente temporibus quasi mollitia.</p>
+                            </div>
+                        </div>
+
+                        <div class="listing-single-second-floor-plan">
+                            <div class="listing-single-floor-specs">
+                                <a class="color-black" href="#floor2" data-toggle="collapse">
+                                    <b class="mr-3">Second Floor</b>Size<b> 1200Sqft </b>Baths <b>500Sqft</b> Price <b>$1500</b>
+                                </a>
+                            </div>
+                            <div id="floor2" class="collapse">
+                                <img src="assets/images/floor_plan.png" class="w-100" alt="img">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iusto. Sit quo impedit, perferendis magni <b>nobis fugit odio itaque at nam, excepturi, libero ipsa laudantium. Nemo odit id laborum perspiciatis.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, maiores similique sapiente temporibus quasi mollitia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listing-single-property-video">
+                        <h4 class="listing-single-box-heading bold mb-4">Property Video</h4>
+                        <div class="relative">
+                            <img src="assets/images/property-video.jpg" class="w-100" alt="img">
+                            <a class="video-icon venobox" data-vbtype="video" href="#"><i class="fas fa-play"></i></a> 
+                        </div>
+                    </div>
+
+                    <div class="listing-single-reviews-box mb-30">
+                            <div class="listing-single-review-area d-flex justify-content-between">
+                                <div class="review-stars d-flex">
+                                    <p><b>700+</b> Reviews</p>
+                                        <i class="ml-3 first-review-star mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="color-light fas fa-star"></i>
+                                    <p class="ml-3 review-rating">( 4.5 out of 5 )</p>
+                                </div>
+                                    <a class="color-blue" href="#">Write a review</a>
+                            </div>
+    
+                            <div class="listing-single-reviews mt-4">
+                                <div class="media">
+                                    <img src="assets/images/review1.png" class="img-fluid mr-3" alt="img">
+                                <div class="media-body">
+                                    <div class="listing-single-review-name d-flex">
+                                        <p class="bold">Iliena D'Cruz</p>
+                                        <i class="ml-3 first-review-star mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="color-blue fas fa-star"></i>
+                                    </div>
+                                    <p>02 March 2021</p>
+                                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos rerum adipisci id tempora ducimus ex qui quae, provident numquam debitis perferendis rem temporibus.</p>
+                                </div>
+                            </div>
+    
+                                <div class="line"></div>
+    
+                                <div class="media">
+                                    <img src="assets/images/review2.png" class="img-fluid mr-3" alt="img">
+                                <div class="media-body">
+                                    <div class="listing-single-review-name d-flex">
+                                        <p class="bold">Iliena D'Cruz</p>
+                                        <i class="ml-3 mr-1 first-review-star color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="mr-1 color-blue fas fa-star"></i>
+                                        <i class="color-blue fas fa-star"></i>
+                                    </div>
+                                    <p>02 March 2021</p>
+                                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos rerum adipisci id tempora ducimus ex qui quae, provident numquam debitis perferendis rem temporibus.</p>
+                                </div>
+                            </div>
+    
+                            </div>
+    
+                            <div class="listing-single-write-review-form mt-4">
+                                <p class="bold">Write a Review</p>
+                                <div class="d-flex review-form-stars-n-review-txt my-3">
+                                    <i class="mr-1 color-blue fas fa-star"></i>
+                                    <i class="mr-1 color-blue fas fa-star"></i>
+                                    <i class="mr-1 color-blue fas fa-star"></i>
+                                    <i class="mr-1 color-blue fas fa-star"></i>
+                                    <i class="color-blue fas fa-star"></i>
+                                    <p class="ml-3 review-form-rating-n-review">Your Ratings & Review</p>
+                                </div>
+    
+                                <form method="POST">
+                                    <input type="text" class="form-control mb-3" placeholder="Review Title" required>
+                                    <textarea class="form-control" rows="7" placeholder="Your Review" required></textarea>
+                                    <button type="submit" class="btn mt-3">Submit Review</button>
+                                </form>
+                            </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="pages-search-area mb-30 mt-0">
+                   <div class="listing-pages-listed-by-box">
+                        <div class="listed-by-img-n-txt mb-4 d-flex">
+                            <div class="listed-by-img mr-3">
+                                <img src="assets/images/listed-by.png" alt="img">
+                            </div>
+                            <div class="listed-by-txt">
+                                <h5>John Wick</h5>
+                                <p><a href="tel:111222333">111-222-333</a></p>
+                                <p><a href="mailto:info@dummy.org">info@dummy.org</a></p>   
+                                <p><a class="color-black" href="#">View My Listing</a></p>
+                            </div>
+                        </div>
+                        <form>
+                            <input class="form-control" placeholder="Name" type="text" required>
+                            <input class="form-control" placeholder="+92-312-1234567" type="tel" pattern="[+]{1}[9]{1}[2]{1}-[3]{1}[0-9]{2}-[0-9]{7}" required>
+                            <input class="form-control" placeholder="Email" type="email" required>
+                            <textarea class="form-control mb-3" placeholder="i'm interested in" rows="5" required></textarea>
+                            <button type="submit" class="btn w-100">Submit</button>
+                        </form>
+                   </div> 
+                    <div class="pages-selection-box relative bg-white">
+                        <form>
+                            <div class="form-group relative">
+                                <input type="text" class="form-control" placeholder="Search" required>
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </div>
+                            <div class="form-group relative">
+                                <input type="text" class="form-control" placeholder="Location" required>
+                                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                            <select name="property-type" id="property-type" class="w-100" required>
+                                <option value="">Property type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="bungalow">Bungalow</option>
+                                <option value="house">House</option>
+                                <option value="land">Land</option>
+                                <option value="single family">Single Family</option>
+                            </select>
+                            <select name="beds" id="beds" class="w-100" required>
+                                <option value="">Bedrooms</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <select name="baths" id="baths" class="w-100" required>
+                                <option value="">Baths</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <select name="garages" id="garages" class="w-100" required>
+                                <option value="">Garages</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <div class="form-group relative">
+                                <input type="number" class="form-control" placeholder="Price" required>
+                            </div>
+                            <div class="form-group relative">
+                                <input type="number" class="form-control" placeholder="Area (Sq.ft)" required>
+                            </div>
+                            <button type="submit" class="btn w-100">Search</button>
+                        </form>              
+                    </div>
+                <div class="product-categories-box bg-white">
+                  <h3 class="mb-4">Categories Property</h3>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Apartment<span>6 properties</span></a></p>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Family house<span>12 properties</span></a></p>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Town house<span>32 properties</span></a></p>
+                  <p><i class="fas fa-caret-right mr-2"></i><a href="#">Land<span>90 properties</span></a></p>
+              </div>
+              <div class="featured-listing-box bg-white">
+                  <h3 class="mb-4">Featured Listing</h3>
+                  <div class="media mb-4">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp1.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice Room with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+                  <div class="media mb-4">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp2.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice house with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp3.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice Room with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+              </div>
+             </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  
+  <footer>
+    <!-- Footer Subscribe Section -->
+  <section id="subscribe-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                  <div class="sub-box">
+                      <h2 class="color-white text-center mb-4 bold">Subscribe to Our Newsletter</h2>
+                      <form class="relative">
+                      <input class="form-control" type="email" placeholder="Your Email" required>
+                      <button type="submit" class="btn">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer Middle Section -->
+
+  <div class="upper-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="footer-logo-area mb-50">
+
+                      <div class="footer-logo mb-3">
+                          <a href="index.html"><img src="assets/images/logo-dark.png" class="w-50" alt="img"></a>
+                      </div>
+
+                      <div class="footer-text-area mt-1">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at molestias nulla? Voluptas eligendi, provident sapiente.</p>
+                      </div>
+
+                      <div class="footer social-icons mt-3">
+                          <a class="color-white mr-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-instagram"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-twitter"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                          <a class="color-white" href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="footer-latest-news mb-50">
+                      <div class="footer-list-heading">
+                          <h4>Quick Links</h4>
+                      </div>
+                      <div class="footer-list">
+                          <ul class="list-unstyled">
+                              <li><a href="index.html">Home</a></li>                               
+                              <li><a href="index.html#our-properites">Properties</a></li>                               
+                              <li><a href="index.html#team">Our Team</a></li>                               
+                              <li><a href="index.html#articles">Articles</a></li>                               
+                              <li><a href="contact-page.html">Contact</a></li>                                                                                   
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="footer-latest-news mb-50">
+                      <div class="footer-list-heading">
+                          <h4>Support</h4>
+                      </div>
+                      <div class="footer-list">
+                          <p class="color-white mb-2">Feel Free To Contact</p>
+                          <ul class="list-unstyled">
+                              <li><p><i class="fas fa-map-marker-alt mr-2"></i>121 King Melbou Australia</p></li>                               
+                              <li><p><i class="fas fa-phone-alt mr-2"></i><a href="tel:111222333">111-222-333</a></p></li>                                                             
+                              <li><p><i class="fas fa-envelope mr-2"></i><a href="mailto:info@dummy.org">info@dummy.org</a></p></li>  
+                              <li><p><i class="fas fa-globe mr-2"></i>www.yourdomain.com</p></li>                                                                                         
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="footer-map mb-50">
+                      <iframe src="https://www.amap.com/" sandbox=""  height="200" style="border:0; width: 100%; margin-bottom: -6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+              </div>
+     
+              </div>
+          </div>
+      </div>
+
+      <!-- Lower Footer Section -->
+
+      <div class="lower-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-copyright-area">
+                          <p>© 2025 All Rights Reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a></p>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-privacy-area">
+                          <a href="#">Privacy Policy</a>
+                          <span>|</span>
+                          <a href="#">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+</footer>
+
+  <!-- Jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Owl Carousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- Jquery Nice Select -->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!-- Venobox -->
+  <script src="assets/js/venobox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

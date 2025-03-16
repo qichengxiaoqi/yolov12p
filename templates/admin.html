@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ESTLO - A Responsive Real Estate HTML Template">
+    <meta name="author" content="TeamEssential">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESTLO - A Responsive Real Estate HTML Template</title>
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Nice Select -->       
+    <link rel="stylesheet" href="assets/css/nice-select.css">    
+    <!-- Venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>  
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="loading">
+              <div class="bounceball"></div>
+              <div class="text">NOW LOADING</div>
+            </div>
+        </div>
+    <!-- Top-Header -->
+    <div class="top-header py-2 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 align">
+                    <div class="top-header-mail">
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="top-header-search-box">
+                        <form>
+                            <div class="form-group relative mb-0">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 align">
+                    <div class="top-header-login text-right">
+                        <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="far fa-sign-in mr-2"></i>Login or Register</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="nav-colored navbar navbar-expand-lg navbar-light" id="mynavbar">
+        <div class="container">
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggle-icon color-white"><i class="fab fa-get-pocket"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="introduction.html">项目介绍</a>
+                  </li>
+
+              </ul>
+              <span class="nav-btn ml-2">
+                <a class="btn" href="contact-page.html">开始预测</a>
+              </span>
+            </div>
+          </div>
+    </nav>
+  </header>
+
+    <!-- Login & Signup Modal -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content radius">
+                <div class="signup-login">
+                    <div class="login-form">
+                        <div class="login-form-heading mb-4 text-center">
+                              <h4 class="bold">Login to your account</h4>
+                              <p class="d-flex justify-content-center">if you don't have an account<a href="#" data-target=".signup-login" data-show=".signup-form" class="ml-1 show bold">Create an Account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="form-group relative">
+                                  <input class="form-control" type="email" placeholder="Email" required>
+                                  <span><i class="fas fa-lock"></i></span>
+                              </div>
+                              <div class="form-group relative">
+                                  <input class="form-control" type="password" placeholder="Password" required>
+                                  <span><i class="fas fa-key"></i></span>
+                              </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox">
+                                  <p class="align">Remember Me!</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Login</button>
+                          </form>
+                      </div>
+    
+                      <div class="signup-form hide">
+                        <div class="signup-form-heading mb-4 text-center">
+                              <h4 class="bold">Create your account</h4>
+                              <p class="d-flex justify-content-center">Already have an account?<a href="#" data-target=".signup-login" data-show=".login-form" class="ml-1 show bold">Login to your account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="signup-form-name-boxes d-flex">
+                                <div class="form-group w-100 relative">
+                                    <input class="form-control" type="text" placeholder="First Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                                <div class="form-group w-100 ml-2 relative">
+                                    <input class="form-control" type="text" placeholder="Last Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                              </div>
+                              <div class="form-group relative">
+                                <input class="form-control" type="email" placeholder="Your Email" required>
+                                <span><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Repeat Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox" required>
+                                  <p class="align">I agree to Terms & Conditions</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Sign Up</button>
+                          </form>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Banner Section -->
+        <section class="blogs-grid-banner relative color-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blogs-grid-banner-txt">
+                             <h3 class="bold text-center mb-3">管理用户上传的文件</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grids Section -->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">This is a standard post</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Ali Asif</p>
+                                    </div>
+                                    <p class="w-100 align text-right">3 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Luxury Villa at low Price</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Nomi Vin</p>
+                                    </div>
+                                    <p class="w-100 align text-right">9 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Neat and Clean Rooms</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">John Doe</p>
+                                    </div>
+                                    <p class="w-100 align text-right">7 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Neat and Clean Rooms</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">John Doe</p>
+                                    </div>
+                                    <p class="w-100 align text-right">7 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Luxury Villa at low Price</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Nomi Vin</p>
+                                    </div>
+                                    <p class="w-100 align text-right">9 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">This is a standard post</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Ali Asif</p>
+                                    </div>
+                                    <p class="w-100 align text-right">3 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">This is a standard post</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Ali Asif</p>
+                                    </div>
+                                    <p class="w-100 align text-right">3 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+        
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Luxury Villa at low Price</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">Nomi Vin</p>
+                                    </div>
+                                    <p class="w-100 align text-right">9 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog mb-30">
+                            <div class="blog-img relative">
+                                <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                                <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                                <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
+                            </div>
+                            <div class="blog-textarea pt-3">
+                                <p class="color-blue">Apartment</p>
+                                <a href="single-post.html" class="blog-heading">Neat and Clean Rooms</a>
+                                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
+                                <div class="blog-footer d-flex justify-content-between">
+                                    <div class="blog-user d-flex w-100">
+                                        <img src="assets/images/blog-user.png" alt="img">
+                                        <p class="align ml-1">John Doe</p>
+                                    </div>
+                                    <p class="w-100 align text-right">7 Days Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="my-pagination mt-3 text-center">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+ <!-- Footer -->
+  
+ <footer>
+    <!-- Footer Subscribe Section -->
+
+
+  <!-- Footer Middle Section -->
+
+
+      <!-- Lower Footer Section -->
+
+      <div class="lower-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-copyright-area">
+                          <p>© 2025 All Rights Reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a></p>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-privacy-area">
+                          <a href="#">Privacy Policy</a>
+                          <span>|</span>
+                          <a href="#">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+</footer>
+
+  <!-- Jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Owl Carousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- Jquery Nice Select -->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!-- Venobox -->
+  <script src="assets/js/venobox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
